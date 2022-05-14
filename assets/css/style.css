@@ -1,5 +1,5 @@
 :root{
-    --light_gray: #D0CCD0;
+    --box-background: #D0CCD0;
     --soft_white: #FBFCFF;
     --brown_gray:  #605856;
     --blue_saphire: #1C6E8C;
@@ -32,7 +32,7 @@ nav {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: var(--light_gray);
+    background-color: var(--box-background);
     z-index: 9999;
 }
 
@@ -71,11 +71,12 @@ nav ul li a:hover {
 }
 /*Navigation styling end*/
 
+
 /*About me styling start*/
 .aboutMe{
     margin: 3vw 0 3vw 0;
     text-align: center;
-    background-color: var(--light_gray);
+    background-color: var(--box-background);
     border-radius: 20px;
 }
 
@@ -91,8 +92,9 @@ nav ul li a:hover {
 }
 /*About me styling end*/
 
+
 /*exampleWork styling start*/
-.exampleWork{*
+.exampleWork{
 
 }
 
@@ -127,13 +129,23 @@ nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     font-style: italic;
-    color: var(--light_gray);
+    color: var(--box-background);
 }
 /*exampleWork styling start*/
 
 
 /*footer styling begin*/
 footer{
-    margin: 30px 0 30px 0;
+    margin: 30px 0 0 0;
+    padding: 30px 0 30px 0;
+    background-color: var(--box-background);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
+
+.contactInfo p{
+    padding: 10px 0 30px 0;
+}
+
+
 /*footer styling end*/
