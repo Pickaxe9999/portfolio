@@ -74,7 +74,7 @@ nav ul li a:hover {
 
 /* hero styling start */
 .hero{
-    height: 400px;
+    height: 500px;
     background-image: url("../images/hero_image.jpg");
     background-size: 100% 100%;
     position: relative;
@@ -116,26 +116,20 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.exampleWork ul li{
+.exampleWork ul a{
+    text-decoration: none;
     justify-content: space-around;
     flex: 2 50%;
     margin: 60px 0 60px 0;
+    padding: 0 0 0 0;
     position: relative;
-}
-
-.exampleWork ul li a{
-    text-decoration: none;
-}
-
-.exampleWork ul li a img{
-    transform: rotate(90deg);
-    width: 400px;
+    background-image: url("../images/filler.jpg");
+    background-size: cover;
     height: 400px;
-    border: 5px solid var(--blue_saphire);
+    width: 200px;
 }
 
-.exampleWork ul li a p{
-    margin: 0 25% 0 25%;
+.exampleWork ul a li p{
     font-size: 25px;
     background-color: var(--blue_saphire);
     border: 3px solid var(--blue_saphire);
@@ -143,7 +137,11 @@ nav ul li a:hover {
     font-style: italic;
     color: var(--box-background);
     border-radius: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
 }
+
 /*exampleWork styling start*/
 
 
