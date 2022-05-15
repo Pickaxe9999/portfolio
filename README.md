@@ -32,3 +32,14 @@ THEN I am taken to that deployed application
 
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+
+Description - website is a simple mock porfolio home page for possible recruiters
+
+Screenshot-
+![portfolio_application_screenshot](https://user-images.githubusercontent.com/103781767/168497602-cf360dd6-99ce-48ca-872d-9f0157cce823.jpg)
+
+Last Updated by - Jacob_Hannah(jacob.hannah164@gmail.com) 
+Last Updated - 5/15/2022 
+Website link - https://pickaxe9999.github.io/portfolio/
+GitHub - https://github.com/Pickaxe9999/portfolio.git
