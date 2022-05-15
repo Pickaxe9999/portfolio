@@ -26,6 +26,7 @@ header{
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 
 nav {
@@ -33,7 +34,6 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     background-color: var(--box-background);
-    z-index: 9999;
 }
 
 nav h1{
@@ -72,6 +72,22 @@ nav ul li a:hover {
 /*Navigation styling end*/
 
 
+/* hero styling start */
+.hero{
+    height: 400px;
+    background-image: url("../images/hero_image.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.hero h1{
+    position: absolute;
+    bottom: 0;
+}
+/* hero styling end */
+
+
+
 /*About me styling start*/
 .aboutMe{
     margin: 3vw 0 3vw 0;
@@ -94,9 +110,6 @@ nav ul li a:hover {
 
 
 /*exampleWork styling start*/
-.exampleWork{
-
-}
 
 .exampleWork ul{
     display: flex;
@@ -107,10 +120,14 @@ nav ul li a:hover {
     justify-content: space-around;
     flex: 2 50%;
     margin: 60px 0 60px 0;
+    position: relative;
 }
 
-.exampleWork ul li img{
-    display: inline;
+.exampleWork ul li a{
+    text-decoration: none;
+}
+
+.exampleWork ul li a img{
     transform: rotate(90deg);
     width: 400px;
     height: 400px;
@@ -118,14 +135,14 @@ nav ul li a:hover {
 }
 
 .exampleWork ul li a p{
+    margin: 0 25% 0 25%;
     font-size: 25px;
     background-color: var(--blue_saphire);
-    text-decoration: none;
+    border: 3px solid var(--blue_saphire);
     font-weight: bold;
     font-style: italic;
     color: var(--box-background);
-    margin: 0 25% 0 25%;
-    border-radius: 25px;
+    border-radius: 50px;
 }
 /*exampleWork styling start*/
 
@@ -142,6 +159,4 @@ footer{
 .contactInfo p{
     padding: 10px 0 30px 0;
 }
-
-
 /*footer styling end*/
