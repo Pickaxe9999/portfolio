@@ -25,15 +25,15 @@ header{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    width: 100%;
     z-index: 9999;
 }
 
 nav {
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: var(--box-background);
+    padding: 15px;
 }
 
 nav h1{
@@ -62,12 +62,15 @@ nav ul li a{
     text-decoration: none;
     color: black;
     padding: 10px;
+    margin: 20px;
+    border-bottom: 2px solid black;
 }
 
 nav ul li a:hover {
     color: var(--soft_white);
     background-color: var(--brown_gray);
     border-radius: 10px;
+    border: none;
 }
 /*Navigation styling end*/
 
@@ -94,6 +97,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: var(--box-background);
     border-radius: 20px;
+    padding: 20px;
 }
 
 .aboutMe h2{
@@ -103,9 +107,25 @@ nav ul li a:hover {
     width: 50%;
 }
 
+.aboutMe div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aboutMe div img{
+    margin: 20px;
+    max-width: 50%;
+    max-height: 100%;
+}
+
 .aboutMe p {
     margin: 30px;
+    text-align: left;
+    line-height: 2vw;
 }
+
+
 /*About me styling end*/
 
 
@@ -114,32 +134,44 @@ nav ul li a:hover {
 .exampleWork ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exampleWork a li{
+    margin: auto;
+    max-width: 862px;
 }
 
 .exampleWork ul a{
-    text-decoration: none;
-    justify-content: space-around;
-    flex: 2 50%;
-    margin: 60px 0 60px 0;
-    padding: 0 0 0 0;
-    position: relative;
-    background-image: url("../images/filler.jpg");
-    background-size: cover;
-    height: 400px;
-    width: 200px;
+    margin:20px 50px 20px 50px;
 }
 
-.exampleWork ul a li p{
+.projects img{
+    width: 100%;
+    object-fit: fill;
+}
+
+.projects li{
+    text-decoration: none;
+    border: 5px solid var(--blue_saphire);
+    position: relative;
+    opacity: 80%;
+}
+
+.projects li:hover{
+    opacity: 100%;
+}
+
+.projects li p{
     font-size: 25px;
     background-color: var(--blue_saphire);
     border: 3px solid var(--blue_saphire);
     font-weight: bold;
     font-style: italic;
     color: var(--box-background);
-    border-radius: 50px;
     position: absolute;
-    bottom: 0px;
-    left: 15%;
+    bottom: 10px;
+    left: 0px;
 }
 
 /*exampleWork styling start*/
@@ -154,7 +186,32 @@ footer{
     border-top-right-radius: 20px;
 }
 
-.contactInfo p{
-    padding: 10px 0 30px 0;
+footer h2{
+    display: inline;
+    padding: 0 25% 0 25%;
+    border-bottom: 2px solid var(--charcoal_blue);
+    width: 50%;
+    margin: 0 0 10px 0;
 }
+
+.contactInfo p{
+    margin: 10px 0 10px 0;
+}
+
+.contactInfo p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contactInfo p a:hover{
+    padding: 5px;
+    color: var(--soft_white);
+    background-color: var(--brown_gray);
+    border-radius: 10px;
+    border: none;
+}
+
+
 /*footer styling end*/
